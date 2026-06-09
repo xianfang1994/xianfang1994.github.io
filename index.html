@@ -22,6 +22,97 @@
         /*h3{font-size: 18px; margin-top: 20px; margin-bottom: 20px;}*/
         /*p{font-size: 16px;}*/
 
+
+    /* 核心容器：一个“虚框”，控制上下横线范围 */
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    /* 👆 照片上方的横线 */
+    .line-top {
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        margin-bottom: 20px;
+    }
+
+    /* 内容区：文字在左，照片在右 */
+    .content-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 10px 0;
+    }
+
+    /* 左侧文字（高度低于照片） */
+    .text-area {
+        flex: 1;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #111;
+        margin-bottom: 8px;
+    }
+
+    .age,
+    .job,
+    .intro {
+        font-size: 15px;
+        color: #444;
+        margin: 6px 0;
+    }
+
+    /* 右侧照片（高度更高，上下超出文字区） */
+    .photo-area img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 👇 照片下方的横线 */
+    .line-bottom {
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        margin-top: 20px;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 550px) {
+        .content-row {
+            flex-direction: row;
+            gap: 20px;
+        }
+        .photo-area img {
+            width: 80px;
+            height: 80px;
+        }
+        .name {
+            font-size: 20px;
+        }
+        .age,
+        .job,
+        .intro {
+            font-size: 13px;
+        }
+    }
+
+
+
+
+
+        
     </style>
 </head>
 
@@ -31,6 +122,41 @@
 
     <div class="container">
 
+
+
+        
+<div class="card">
+
+    <div class="line-top"></div>
+
+
+    <div class="content-row">
+
+        <div class="text-area">
+            <div class="name">林书瑶</div>
+            <div class="age">年龄：27岁</div>
+            <div class="job">职业：UX 设计师</div>
+            <div class="intro">📍 深圳 · 5年经验</div>
+        </div>
+
+        <div class="photo-area">
+            <img src="https://picsum.photos/id/20/110/110" alt="人物照片">
+        </div>
+    </div>
+    <div class="line-bottom"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
         <hr style="border: none; border-top: 2px dashed #ccc;">
 
 
