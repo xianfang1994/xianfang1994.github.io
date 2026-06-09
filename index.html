@@ -28,10 +28,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 700px;
+        max-width: 900px;
     }
 
-    /* 👆 照片上方的横线 */
+ 
     .line-top {
         width: 100%;
         height: 2px;
@@ -39,7 +39,7 @@
         margin-bottom: 20px;
     }
 
-    /* 内容区：文字在左，照片在右 */
+
     .content-row {
         display: flex;
         align-items: center;
@@ -48,7 +48,6 @@
         padding: 10px 0;
     }
 
-    /* 左侧文字（高度低于照片） */
     .text-area {
         flex: 1;
         text-align: left;
@@ -70,7 +69,6 @@
         margin: 6px 0;
     }
 
-    /* 右侧照片（高度更高，上下超出文字区） */
     .photo-area img {
         width: 110px;
         height: 110px;
@@ -80,7 +78,7 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    /* 👇 照片下方的横线 */
+  
     .line-bottom {
         width: 100%;
         height: 2px;
@@ -88,25 +86,7 @@
         margin-top: 20px;
     }
 
-    /* 移动端适配 */
-    @media (max-width: 550px) {
-        .content-row {
-            flex-direction: row;
-            gap: 20px;
-        }
-        .photo-area img {
-            width: 80px;
-            height: 80px;
-        }
-        .name {
-            font-size: 20px;
-        }
-        .age,
-        .job,
-        .intro {
-            font-size: 13px;
-        }
-    }
+
 
 
 
@@ -125,31 +105,21 @@
 
 
         
-<div class="card">
-
-    <div class="line-top"></div>
-
-
-    <div class="content-row">
-
-        <div class="text-area">
-            <div class="name">林书瑶</div>
-            <div class="age">年龄：27岁</div>
-            <div class="job">职业：UX 设计师</div>
-            <div class="intro">📍 深圳 · 5年经验</div>
+        <div class="card">
+            <div class="line-top"></div>
+            <div class="content-row">
+                <div class="text-area">
+                    <div class="name">Xian Fang (方贤)</div>
+                    <div class="age">Assistant Professor</div>
+                    <div class="job">Zhejiang Sci-Tech University</div>
+                    <div class="intro">Email: xianfang@zstu.edu.cn</div>
+                </div>
+                <div class="photo-area">
+                    <img src="./logo.jpg" width="150" height="150">
+                </div>
+            </div>
+            <div class="line-bottom"></div>
         </div>
-
-        <div class="photo-area">
-            <img src="https://picsum.photos/id/20/110/110" alt="人物照片">
-        </div>
-    </div>
-    <div class="line-bottom"></div>
-</div>
-
-
-
-
-
 
 
 
