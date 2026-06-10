@@ -10,10 +10,6 @@
         .container{width: 900px; margin: 20px auto; padding: 40px; background-color: #ffffff; border-radius: 15px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);}
         .text-container{text-align: justify;}
         
-        .sidebar{float: right; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;}
-        .publication{clear: left; padding-bottom: 0px;}
-        .publogo2{width: 100px; margin-right: 20px; float: left; padding-bottom: 10px;}
-        
         a{text-decoration: none;}
         a:hover{text-decoration: underline;}
         a, a:visited {color: #0050e7;}
@@ -38,7 +34,10 @@
         .name{font-size: 24px; font-weight: bold; margin-top: 0px; margin-bottom: 8px;}
         .others{font-size: 16px; margin: 4px 0;}
         
-        .publication{padding-bottom: 0px;}
+        .sidebar{float: right; margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;}
+        .publication{clear: left; padding-bottom: 0px;}
+        .publication-logo{float: left; width: 200px; margin-right: 20px; padding-bottom: 10px;}
+
 
     </style>
 </head>
@@ -83,24 +82,26 @@
 
         
         <div class="publication">
-            <img src="./logo.jpg" width="250" height="100" style=”float: left; padding: 0px 0px 30px 0px;” class="publogo2">
-
-        <b>MPNet: Maximum parallax network for light field salient object detection</b>
-        <br>
-        <b>Xian Fang</b>, Zhigao Li, Mingfeng Jiang*, Xuxin Wu
-        <br>
-        Knowledge-Based Systems, 2026, 346: 116190
-        <br>
-        <a href="./PDF/MPNet冒号 Maximum parallax network for light field salient object detection.pdf" target="_blank" rel="external">[PDF]</a>
-        <a href="https://www.sciencedirect.com/science/article/pii/S0950705126009160" target="_blank" rel="external">[Link]</a>
-        <a href="https://github.com/hrbx-bot/MPNet-LFSOD" target="_blank" rel="external">[Code]</a>
+            <div class="publication-logo">
+                <img src="./logo.jpg">
             </div>
+            <b>MPNet: Maximum parallax network for light field salient object detection</b>
+            <br>
+            <b>Xian Fang</b>, Zhigao Li, Mingfeng Jiang*, Xuxin Wu
+            <br>
+            Knowledge-Based Systems, 2026, 346: 116190
+            <br>
+            <a href="./PDF/MPNet冒号 Maximum parallax network for light field salient object detection.pdf" target="_blank" rel="external">[PDF]</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0950705126009160" target="_blank" rel="external">[Link]</a>
+            <a href="https://github.com/hrbx-bot/MPNet-LFSOD" target="_blank" rel="external">[Code]</a>
+        </div>
         <br>
         <br>
 
-
-            <img src="./logo.jpg" width="250" style=”float: left; padding: 0px 0px 30px 0px;”>
-
+        <div class="publication">
+            <div class="publication-logo">
+                <img src="./logo.jpg">
+            </div>
         <b>Interactive edge awareness network for salient object detection in optical remote sensing images</b>
         <br>
         <b>Xian Fang</b>, Qihang Wang, Qiaohong Chen*, Gongyang Li
@@ -109,7 +110,8 @@
         <br>
         <a href="./PDF/Interactive edge awareness network for salient object detection in optical remote sensing images.pdf" target="_blank" rel="external">[PDF]</a>
         <a href="https://www.sciencedirect.com/science/article/pii/S095741742600792X" target="_blank" rel="external">[Link]</a>
-        <br>
+        </div>
+            <br>
         <br>
 
 
